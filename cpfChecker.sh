@@ -2,8 +2,8 @@
 
 # Programa:            cpfChecker.sh
 # Criado em:           27/07/2021
-# Ultima modificacao:  19/08/2021
-# Autoria:             Lucas Zanoti
+# Ultima modificacao:  20/08/2021
+# Autoria:             Lucas Zanotti
 # Email:               lucaszanotti1997@gmail.com
 # Discord:             /zntt#7359
 
@@ -12,7 +12,7 @@ reset="\033[0m"
 yellow="\033[0;33m"
 
 # Menu
-if [[ -z $1 || "$1" == "-h" || "$1" == "--help"]]; then
+if [[ -z $1 || "$1" == "-h" || "$1" == "--help" ]]; then
 	echo -e ""
 	echo -e "${yellow}Opções:${reset}              [-h. --help] Para acessar o menu de ajuda."
 	echo -e "${yellow}Uso:${reset}                 ./cpfChecker.sh 12345678900"
