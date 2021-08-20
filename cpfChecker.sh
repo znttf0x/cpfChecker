@@ -14,8 +14,8 @@ yellow="\033[0;33m"
 # Menu
 if [[ -z $1 || "$1" == "-h" || "$1" == "--help" ]]; then
 	echo -e ""
-	echo -e "${yellow}Opções:${reset}              [-h. --help] Para acessar o menu de ajuda."
-	echo -e "${yellow}Uso:${reset}                 ./cpfChecker.sh 12345678900"
+	echo -e "${yellow}Opções:${reset}  [-h. --help] Para acessar o menu de ajuda."
+	echo -e "${yellow}Uso:${reset}     ./cpfChecker.sh 12345678900"
 	exit
 fi
 
@@ -44,6 +44,7 @@ if [[ "$status" != "Válido" ]]; then
 else
 	echo -e "${yellow}Emitido em:${reset}\c"
 fi
+
 state=$(echo $1 | cut -c9)
 case "$state" in
 	0 ) echo -e " Rio Grande do Sul"
