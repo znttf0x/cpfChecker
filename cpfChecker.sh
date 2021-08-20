@@ -20,6 +20,7 @@ if [[ -z $1 || "$1" == "-h" || "$1" == "--help" ]]; then
 fi
 
 # Program
+format=$(echo $1 | sed 's/\.//g' | sed 's/-//g')
 read -a cpf <<< $(echo "$1" | sed 's/./& /g')
 
 stSum=$(((${cpf[0]}*10)+(${cpf[1]}*9)+(${cpf[2]}*8)+(${cpf[3]}*7)+(${cpf[4]}*6)+(${cpf[5]}*5)+(${cpf[6]}*4)+(${cpf[7]}*3)+(${cpf[8]}*2)))
